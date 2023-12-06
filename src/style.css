@@ -11,6 +11,11 @@
   max-width: 1400px;
 }
 
+section {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../images/open books.jpg");
@@ -49,7 +54,51 @@ header a {
   text-decoration: none;
 }
 
-@media (max-width: 900px) {
+p {
+  font-family: var(--paragraph-font-family);
+}
+
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+footer {
+  background-image: linear-gradient(rgba(39, 32, 0, 0.9), rgba(0, 0, 0, 0.6)),
+    url("../images/diagonal\ books.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 60px;
+}
+
+footer h3 {
+  color: paleturquoise;
+  font-size: 20px;
+}
+
+footer ul {
+  margin: 0;
+  padding: 16px 0;
+}
+
+footer li {
+  color: paleturquoise;
+  font-family: var(--paragraph-font-family);
+  font-size: 16px;
+  list-style: none;
+  padding: 0;
+  opacity: 0.7;
+}
+
+footer p {
+  color: paleturquoise;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 30px;
   }
