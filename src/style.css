@@ -1,19 +1,24 @@
 :root {
   --branding-color: ;
-  --secondary-color: ;
+  --accent-color: #94e8b4;
   --text-color: ;
   --header-font-family: "Playfair Display", serif;
   --paragraph-font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-color: #574d68;
+}
+
 .container {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1200px;
 }
 
 section {
   margin: 0 auto;
   max-width: 1200px;
+  padding: 60px 75px;
 }
 
 header {
@@ -22,7 +27,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: paleturquoise;
+  color: var(--accent-color);
   padding: 60px;
   text-align: center;
 }
@@ -41,7 +46,9 @@ h2 {
 
 h3 {
   font-family: var(--paragraph-font-family);
+  font-size: 16px;
   margin: 0;
+  text-transform: uppercase;
 }
 
 header a {
@@ -56,9 +63,25 @@ header a {
 
 p {
   font-family: var(--paragraph-font-family);
+  opacity: 0.7;
 }
 
-.grid {
+.general-tips {
+  padding: 60px 100px;
+}
+
+.two-column-grid {
+  background-color: white;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.general-tips-image {
+  max-width: 85%;
+}
+
+.three-column-grid {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 2fr 2fr;
@@ -70,12 +93,10 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 60px 60px;
 }
 
 footer h3 {
-  color: paleturquoise;
-  font-size: 20px;
+  color: var(--accent-color);
 }
 
 footer ul {
@@ -84,7 +105,7 @@ footer ul {
 }
 
 footer li {
-  color: paleturquoise;
+  color: var(--accent-color);
   font-family: var(--paragraph-font-family);
   font-size: 16px;
   list-style: none;
@@ -93,9 +114,7 @@ footer li {
 }
 
 footer p {
-  color: paleturquoise;
-  font-size: 16px;
-  opacity: 0.7;
+  color: var(--accent-color);
 }
 
 @media (max-width: 960px) {
@@ -105,9 +124,35 @@ footer p {
 
   h1 {
     font-size: 36px;
+    text-align: center;
   }
 
   h2 {
     font-size: 24px;
+    text-align: center;
+  }
+
+  h3,
+  ul,
+  p {
+    text-align: center;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .grid {
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .general-tips {
+    padding: 30px 30px;
   }
 }
