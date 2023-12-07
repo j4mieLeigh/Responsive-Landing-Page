@@ -130,6 +130,11 @@ section.cards h2 {
   width: 100%;
 }
 
+.audiobook-embed {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
 .card-body {
   padding: 30px;
 }
