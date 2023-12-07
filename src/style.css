@@ -97,11 +97,11 @@ p {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
-section.embeds {
+section.cards {
   background-color: #ded7d5;
 }
 
-section.embeds h2 {
+section.cards h2 {
   text-align: center;
 }
 
@@ -115,9 +115,19 @@ section.embeds h2 {
   background-color: white;
 }
 
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .img-responsive {
   display: block;
-  max-width: 100%;
+  width: 100%;
+}
+
+.embed {
+  aspect-ratio: 1 / 1;
+  width: 100%;
 }
 
 .card-body {
@@ -205,7 +215,15 @@ footer p {
     padding: 30px 30px;
   }
 
-  .embeds p {
+  .cards p {
     text-align: start;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
