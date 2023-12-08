@@ -1,13 +1,9 @@
 :root {
-  --branding-color: ;
-  --accent-color: #94e8b4;
+  --primary-color: #574d68;
+  --secondary-color: #77fee5;
   --text-color: ;
   --header-font-family: "Playfair Display", serif;
   --paragraph-font-family: "Poppins", sans-serif;
-}
-
-body {
-  background-color: #574d68;
 }
 
 .container {
@@ -26,8 +22,8 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: var(--accent-color);
-  padding: 60px;
+  color: var(--secondary-color);
+  padding: 80px;
   text-align: center;
 }
 
@@ -47,6 +43,7 @@ h3 {
   font-family: var(--paragraph-font-family);
   font-size: 16px;
   margin: 0;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -71,17 +68,24 @@ h5 {
   text-decoration: none;
 }
 
-p {
+p,
+ul {
   font-family: var(--paragraph-font-family);
+  line-height: 1.5;
   opacity: 0.7;
 }
 
 .general-tips {
-  padding: 60px 100px;
+  background-color: #f7f7f7;
+}
+
+.general-tips h2 {
+  font-family: var(--paragraph-font-family);
+  font-size: 32px;
+  margin: 15px 0 15px 0;
 }
 
 .two-column-grid {
-  background-color: white;
   display: grid;
   grid-gap: 40px;
   grid-template-columns: 1fr 1fr;
@@ -91,9 +95,17 @@ p {
   max-width: 85%;
 }
 
+.highlight {
+  display: inline;
+  padding: 0.01em 0;
+  background: var(--secondary-color);
+  box-shadow: 0.2em 0 0 var(--secondary-color),
+    -0.2em 0 0 var(--secondary-color);
+}
+
 .three-column-grid-uneven {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 50px;
   grid-template-columns: 1fr 2fr 2fr;
 }
 
@@ -101,7 +113,8 @@ section.cards {
   background-color: #ded7d5;
 }
 
-section.cards h2 {
+section.cards h2,
+section.more-tips h2 {
   text-align: center;
 }
 
@@ -151,16 +164,28 @@ section.cards h2 {
   text-decoration: none;
 }
 
+.audio-h4 {
+  margin-top: -25px;
+}
+
+.more-tips {
+  background-color: var(--primary-color);
+}
+
+.gallery-image {
+  max-width: 100%;
+}
+
 footer {
-  background-image: linear-gradient(rgba(39, 32, 0, 0.9), rgba(0, 0, 0, 0.6)),
-    url("../images/diagonal\ books.jpg");
-  background-position: center;
+  background-image: linear-gradient(rgba(39, 32, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/bookshelf\ 2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 footer h3 {
-  color: var(--accent-color);
+  color: var(--secondary-color);
+  text-align: start;
 }
 
 footer ul {
@@ -169,7 +194,7 @@ footer ul {
 }
 
 footer li {
-  color: var(--accent-color);
+  color: var(--secondary-color);
   font-family: var(--paragraph-font-family);
   font-size: 16px;
   list-style: none;
@@ -178,7 +203,7 @@ footer li {
 }
 
 footer p {
-  color: var(--accent-color);
+  color: var(--secondary-color);
 }
 
 @media (max-width: 960px) {
