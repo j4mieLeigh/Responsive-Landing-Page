@@ -23,7 +23,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--secondary-color);
-  padding: 80px;
+  padding: 100px;
   text-align: center;
 }
 
@@ -59,15 +59,6 @@ h5 {
   margin: 0;
 }
 
-.button-light {
-  background-color: white;
-  color: blueviolet;
-  font-family: var(--paragraph-font-family);
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-}
-
 p,
 ul {
   font-family: var(--paragraph-font-family);
@@ -75,14 +66,20 @@ ul {
   opacity: 0.7;
 }
 
-.general-tips {
-  background-color: #f7f7f7;
+section.general-tips {
+  background-color: #fceff9;
 }
 
 .general-tips h2 {
+  color: black;
   font-family: var(--paragraph-font-family);
   font-size: 32px;
   margin: 15px 0 15px 0;
+}
+
+.general-tips p,
+ul {
+  color: black;
 }
 
 .two-column-grid {
@@ -92,6 +89,7 @@ ul {
 }
 
 .general-tips-image {
+  margin-top: 40px;
   max-width: 85%;
 }
 
@@ -110,12 +108,16 @@ ul {
 }
 
 section.cards {
-  background-color: #ded7d5;
+  background-color: #f7f7f7;
 }
 
 section.cards h2,
 section.more-tips h2 {
   text-align: center;
+}
+
+section.more-tips h2 {
+  color: white;
 }
 
 .three-column-grid-even {
@@ -152,16 +154,22 @@ section.more-tips h2 {
   padding: 30px;
 }
 
-.button-dark {
-  background-color: #94e8b4;
+.button {
+  background-color: var(--secondary-color);
   box-shadow: 20px 20px 40px 0px rgba(198, 198, 198, 0.2);
   display: block;
-  color: var(--branding-color);
+  color: black;
   font-family: var(--paragraph-font-family);
   padding: 16px 32px;
   margin: 40px auto 10px auto;
   text-align: center;
   text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+  transform: scale(1.15, 1.15);
+  transition: all 200ms ease-in-out;
 }
 
 .audio-h4 {
@@ -176,6 +184,12 @@ section.more-tips h2 {
   max-width: 100%;
 }
 
+.gallery-image:hover {
+  opacity: 0.8;
+  transform: scale(1.03, 1.03);
+  transition: all 200ms ease-in-out;
+}
+
 footer {
   background-image: linear-gradient(rgba(39, 32, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../images/bookshelf\ 2.jpg");
@@ -184,7 +198,7 @@ footer {
 }
 
 footer h3 {
-  color: var(--secondary-color);
+  color: white;
   text-align: start;
 }
 
@@ -194,15 +208,19 @@ footer ul {
 }
 
 footer li {
-  color: var(--secondary-color);
+  color: white;
   font-family: var(--paragraph-font-family);
   font-size: 16px;
   list-style: none;
   padding: 0;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 footer p {
+  color: white;
+}
+
+footer a {
   color: var(--secondary-color);
 }
 
