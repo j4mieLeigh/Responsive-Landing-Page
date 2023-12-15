@@ -213,11 +213,12 @@ footer li {
   font-size: 16px;
   list-style: none;
   padding: 0;
-  opacity: 0.9;
 }
 
-footer p {
+footer p,
+footer ul {
   color: white;
+  opacity: 1;
 }
 
 footer a {
@@ -239,9 +240,7 @@ footer a {
     text-align: center;
   }
 
-  h3,
-  ul,
-  p {
+  h3 {
     text-align: center;
   }
 
@@ -261,10 +260,6 @@ footer a {
 
   .general-tips {
     padding: 30px 30px;
-  }
-
-  .cards p {
-    text-align: start;
   }
 
   .card-header img {
