@@ -267,6 +267,10 @@ footer a {
     display: none;
   }
 
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
   .embed {
     aspect-ratio: 16 / 9;
   }
